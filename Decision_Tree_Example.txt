@@ -1,3 +1,23 @@
+Dataset Attributes:
+@relation cleveland-14-heart-disease
+@attribute 'age' real
+@attribute 'sex' { female, male}
+@attribute 'cp' { typ_angina, asympt, non_anginal, atyp_angina}
+@attribute 'trestbps' real
+@attribute 'chol' real
+@attribute 'fbs' { t, f}
+@attribute 'restecg' { left_vent_hyper, normal, st_t_wave_abnormality}
+@attribute 'thalach' real
+@attribute 'exang' { no, yes}
+@attribute 'oldpeak' real
+@attribute 'slope' { up, flat, down}
+@attribute 'ca' real
+@attribute 'thal' { fixed_defect, normal, reversable_defect}
+@attribute 'class' { negative, positive}
+
+
+Decision  Tree:
+
 thal = fixed_defect [4 6]
 |       ca <= 0.500000 [4 0]: negative
 |       ca > 0.500000 [0 6]: positive
